@@ -4,7 +4,54 @@ import math
 def main():
     # learn_str_func(False)
     # learn_number_func(True)
-    learn_list_tuple_set_func(True)
+    # learn_list_tuple_set_func(True)
+    learn_dictionary_func(True)
+
+
+def learn_dictionary_func(learn):
+    student = {
+        1: "one",
+        "name": "Andy",
+        "age": 12,
+        "courses": ["Bangla", "English", "Math", "Physics"],
+    }
+    print(student)
+    print(
+        f"{student['name']} is {student['age']} years old. He's studying {student['courses']}"
+    )
+    # print(student["phone"])
+    print(
+        f"{student.get('name')} is {student.get('age')} years old. He's studying {student.get('courses')}. His mobile no is {student.get('phone')} or {student.get('phone', 'UNKNOWN')}"
+    )
+
+    student["phone"] = "0404040404"  # add key-value
+    print(student)
+
+    student["name"] = "Bridget"  # update value
+    print(student)
+
+    new_info = {"name": "Charlie", "enrolled": True}
+    student.update(new_info)
+    print(student)
+
+    # del student[1]
+    # print(student)
+    popped_info = student.pop(1)
+    print(popped_info, ": ", student)
+
+    print(len(student))
+
+    print(student.keys())
+
+    print(student.values())
+
+    print(student.items())
+
+    for key in student:
+        print(key)
+
+    for key, value in student.items():
+        print(key, ": ", value)
 
 
 def learn_list_tuple_set_func(learn):
@@ -88,8 +135,20 @@ def learn_list_tuple_set_func(learn):
     # fruits_copy = fruits  # List is MUTABLE
     # print(id(fruits), ": ", fruits)
     # print(id(fruits_copy), ": ", fruits_copy)
+    # print(fruits == fruits_copy)
+    # print(fruits is fruits_copy)
     # fruits_copy[3] = "figs"
     # print(id(fruits), ": ", fruits)
+    # print(id(fruits_copy), ": ", fruits_copy)
+
+    # fruits_copy = ["apple", "banana", "cherry", "dates"]
+    # print(id(fruits), ": ", fruits)
+    # print(id(fruits_copy), ": ", fruits_copy)
+    # print(fruits == fruits_copy)
+    # print(fruits is fruits_copy)
+    # fruits_copy[3] = "figs"
+    # print(id(fruits), ": ", fruits)
+    # print(id(fruits_copy), ": ", fruits_copy)
 
     # list + access + modify => use list
     # list + access => use tuple (no modification, so not much methods)
