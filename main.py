@@ -3,9 +3,44 @@ import math
 
 def main():
     # learn_str_func(False)
-    # learn_number_func(True)
+    learn_number_func(True)
     # learn_list_tuple_set_func(True)
-    learn_dictionary_func(True)
+    # learn_dictionary_func(True)
+    # learn_if_elif_else(True)
+    # learn_loops(True)
+
+
+def learn_loops(isLearning):
+    i = 0
+    while i < 6:
+        i += 1
+        if i == 2:
+            continue
+        if i == 4444444:
+            break
+        # i += 1 # infinite loop at 2 if increment is here
+        print(i)
+    else:
+        print("i is no longer less than 6")
+
+
+def learn_if_elif_else(isLearning):
+    while True:
+        user_input = input("Enter a number (or 'q' to quit): ")
+        if user_input == "q":
+            print("Exiting infinite loop...q")
+            break
+        else:
+            num = float(user_input)
+            if num >= 0:
+                if num == 0:
+                    print("Zero")
+                elif num > 0 and num <= 10:
+                    print("In the range 1 to 104")
+                else:
+                    print("Positive number")
+            else:
+                print("Negative number")
 
 
 def learn_dictionary_func(learn):
