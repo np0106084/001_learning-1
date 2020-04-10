@@ -10,7 +10,7 @@ def main():
 def learn_list_tuple_set_func(learn):
     """ learning List, Tuple, and Set"""
     fruits = ["apple", "banana", "cherry", "dates"]
-    # print(fruits)
+    print(fruits)
     # print(len(fruits))
     # print(f"{fruits[0]} {fruits[3]}")
     # print(
