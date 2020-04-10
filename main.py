@@ -99,6 +99,21 @@ def learn_list_tuple_set_func(learn):
     # tup_fruits[2] = "fig"
     # print(tup_fruits)
 
+    # Main use: i) keep unique values (but un-ordered)
+    # ii) check it contains a value or not (better than list)
+    # sFruits = {"apple", "banana", "cherry", "dates", "apple"}
+    # print(sFruits)
+    # print("cherry" in sFruits)
+    # sFruits2 = {"apple", "banana", "fig", "grapes"}
+    # print(sFruits2)
+    # print(sFruits.intersection(sFruits2))  # common
+    # print(sFruits.difference(sFruits2))  # sFruits - sFruits2
+    # print(sFruits.union(sFruits2))  # all
+
+    # print(f"empty list: {[]} or {list()}")
+    # print(f"empty tuple: {()} or {tuple()}")
+    # print("empty tuple: ", type({}), type(set()))
+
 
 def learn_number_func(learn):
     #    num = 3
